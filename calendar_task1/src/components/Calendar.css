@@ -1,0 +1,89 @@
+*{
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.calendar {
+  width: 350px;
+  height: 240px;
+  padding-top: 15px;
+  background: white;
+}
+
+.header {
+  width: 350px;
+  Height: 44px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monthSelect {
+  width: 44px;
+  height: 44px;
+  border: 0px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.monthSelect:hover{
+  background-color: #e6e6e6
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  width: 50px;
+  height: 36px;
+  cursor: pointer;
+  border: 0px;
+  background-color:white;
+}
+
+.day:hover {
+  background: #e6e6e6;
+  color: black !important;
+}
+
+.today {
+  background-color: #ffff76 !important;
+  color: black !important;
+}
+
+.day.empty {
+  visibility: hidden;
+}
+
+.day.selected {
+  background-color: #006edc;
+  color: white;
+}
+
+.day.start {
+  background-color: #006edc;
+  color: white;
+}
+
+.day.between {
+  background-color: #006edc;
+  color: white;
+}
+
+.non-current-month {
+  background-color: #fff;
+  cursor: no-drop; 
+}
+
+.disabled {
+  background-color: #fff;
+  color: #757575;
+}
+
+.disabled-icon {
+  color: red;
+  position: absolute;
+}
